@@ -28,4 +28,4 @@ jobs:
 
       # Automation using Any CLI
       - name: Automation using Any CLI
-        run: anypoint-cli-v4 account:user:describe --client_id "${{ CA_CLIENT_ID }}" --client_secret "${{ CA_CLIENT_SECRET }}" 
+        run: anypoint-cli-v4 account:user:describe --client_id "${{ secrets.CA_CLIENT_ID }}" --client_secret "${{ secrets.CA_CLIENT_SECRET }}" 
